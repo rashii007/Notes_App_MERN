@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:5000/api/auth",
+  baseURL: "https://notes-app-mern-sv03.onrender.com/api/auth",
 });
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
