@@ -15,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [darkMoe]);
+  }, [darkMode]);
 
   const toggleTheme = () => {
     setDarkMode((prev) => !prev);
